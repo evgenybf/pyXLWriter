@@ -1,0 +1,57 @@
+
+0.4a3 (2004-08-20)
+  - Simple Worksheet.write correction
+        (thanks to Frank Tobin)  
+  - Corrected author's e-mail: fufff@users.sourceforge.net
+  
+0.4a2 (2004-08-02)
+  - Updated ported version of WriteExcel 0.43 -> 1.01
+  - Updated ported version of OLE-Storage_Lite 0.11 -> 0.13
+  
+0.4a1 (2004-07-01) CVS
+  - Migrated to python 2.2 
+  - mx.DateTime is supported (see: examples/dates.py)
+     (http://www.lemburg.com/files/python/eGenix-mx-Extensions.html)
+  - Removed set_tempdir (use import tempfile; tempfile.tempdir=<value>)
+  
+0.3a3 (2004-05-12) CVS
+  - Updated ported version of WriteExcel 0.42 -> 0.43
+  
+0.3a2 (2004-04-xx) CVS
+  - Bug-fixed Worksheet.write method
+  - Fixed formula parser: parentheses are commands, too. 
+            (thanks to D Skiles)
+  - Optimized OLEWriterBig (now, it doesn't use temporary files)
+  - Minor changes and bug-fixes
+  - Added datetime support. See: examples/dates.py
+  - Changes in Format.set_properties, Format.set_bold. 
+      (thanks to Peter Slickers)
+        
+0.3a1 (2004-02-09)
+  - Corrected Worksheet.py, Formula.py for using on not i386 platforms
+           (thanks to Andre Posumentov. He tested it on Mac OS X)
+  - Ported OLE::Storage_Lite version 0.11 for writing big files 
+    (see OLEWriterBig). Now Workbook has functionality of WorkbookBig (use 
+    'big' parameter). 
+  - Examples: bigfile.py
+
+0.2.0a3 (2004-02-02)
+  - Added assign() method for Format. In original this method is copy().
+  - Examples: tab2xls.py, csv2xls.py, copyformat.py, cgi.py, headers.py,
+              easter_egg.py, win32ole.py
+  - Several bug-fixes (Ex: in Worksheet - _hbreaks and _vbreaks error of using)
+
+0.2.0a2 (2004-01-28)
+  - First public (alpha) release
+  - Added MANIFEST.in into source distribution
+  - Minor distribution changes
+
+0.2.0a1 (2004-01-24)
+  - Formulas support
+  - Ported several examples from Spreadsheet::WriteExcel
+  - Many bug-fixes
+
+0.1.0a1 (2004-01-19)
+  - First public CVS version.
+  - Based on version 0.42 of Perl Spreadsheet::WriteExcel
+  - Experiments with CVS (Sorry, but I much played with cvs.sf.net) =)

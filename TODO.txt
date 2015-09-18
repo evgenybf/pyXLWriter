@@ -1,0 +1,11 @@
+
+- Correct return -> raise Exception !!!
+
+- Correction of docstrings
+
+- Code and comments clean-up
+
+- Formulas fix (unary minus)
+
+- Documentation (with docutils)
+

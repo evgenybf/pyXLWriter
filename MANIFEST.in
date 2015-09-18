@@ -1,0 +1,13 @@
+include *.py *.txt *.cfg
+include MANIFEST.in 
+include MANIFEST
+
+include clean.sh install.sh
+
+include examples *.py *.bmp
+recursive-include pyXLWriter * 
+recursive-include examples *
+recursive-include tests *
+
+global-exclude */CVS/* *.pyc .cvsignore *.~*
+
